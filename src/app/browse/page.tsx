@@ -7,56 +7,7 @@ import { CarCardGrid, CarCardList } from '@/components/ui/CarCard';
 const App: React.FC = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [sortOption, setSortOption] = useState('recommended');
-  const [isFilterOpen, setIsFilterOpen] = useState(true);
-  const [priceRange, setPriceRange] = useState([0, 200000]);
-  const [yearRange, setYearRange] = useState([2010, 2025]);
-  const [mileageRange, setMileageRange] = useState([0, 100000]);
-  const [selectedMakes, setSelectedMakes] = useState<string[]>([]);
-  const [selectedBodyStyles, setSelectedBodyStyles] = useState<string[]>([]);
-  const [selectedFuelTypes, setSelectedFuelTypes] = useState<string[]>([]);
-  const [selectedTransmissions, setSelectedTransmissions] = useState<string[]>([]);
 
-
-  const toggleFilter = () => {
-    setIsFilterOpen(!isFilterOpen);
-  };
-  const handleMakeSelection = (make: string) => {
-    setSelectedMakes(
-      selectedMakes.includes(make)
-        ? selectedMakes.filter(m => m !== make)
-        : [...selectedMakes, make]
-    );
-  };
-  const handleBodyStyleSelection = (style: string) => {
-    setSelectedBodyStyles(
-      selectedBodyStyles.includes(style)
-        ? selectedBodyStyles.filter(s => s !== style)
-        : [...selectedBodyStyles, style]
-    );
-  };
-  const handleFuelTypeSelection = (type: string) => {
-    setSelectedFuelTypes(
-      selectedFuelTypes.includes(type)
-        ? selectedFuelTypes.filter(t => t !== type)
-        : [...selectedFuelTypes, type]
-    );
-  };
-  const handleTransmissionSelection = (transmission: string) => {
-    setSelectedTransmissions(
-      selectedTransmissions.includes(transmission)
-        ? selectedTransmissions.filter(t => t !== transmission)
-        : [...selectedTransmissions, transmission]
-    );
-  };
-  const clearAllFilters = () => {
-    setSelectedMakes([]);
-    setSelectedBodyStyles([]);
-    setSelectedFuelTypes([]);
-    setSelectedTransmissions([]);
-    setPriceRange([0, 200000]);
-    setYearRange([2010, 2025]);
-    setMileageRange([0, 100000]);
-  };
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Main Content */}
