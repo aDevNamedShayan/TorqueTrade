@@ -37,7 +37,6 @@ export default function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
-          {/* <NavLink href="/" className="font-medium text-gray-800 hover:text-blue-600 transition-colors">Home</NavLink> */}
           <NavLink href="/browse" className="font-medium text-gray-800 hover:text-blue-600 transition-colors">Browse Cars</NavLink>
           <NavLink href="/sell" className="font-medium text-gray-800 hover:text-blue-600 transition-colors">Sell Your Car</NavLink>
           <a href="#" className="font-medium text-gray-800 hover:text-blue-600 transition-colors">About Us</a>

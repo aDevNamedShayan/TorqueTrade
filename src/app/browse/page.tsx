@@ -1,12 +1,10 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import Cars from '@/../Cars.json'
+import Cars from '@/../cars.json'
 import { CarCardGrid, CarCardList } from '@/components/ui/CarCard';
 
 const App: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [sortOption, setSortOption] = useState('recommended');
   const [isFilterOpen, setIsFilterOpen] = useState(true);
@@ -17,16 +15,8 @@ const App: React.FC = () => {
   const [selectedBodyStyles, setSelectedBodyStyles] = useState<string[]>([]);
   const [selectedFuelTypes, setSelectedFuelTypes] = useState<string[]>([]);
   const [selectedTransmissions, setSelectedTransmissions] = useState<string[]>([]);
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+
+
   const toggleFilter = () => {
     setIsFilterOpen(!isFilterOpen);
   };
@@ -89,12 +79,11 @@ const App: React.FC = () => {
             </div> */}
           </div>
         </div>
+
         {/* Main Content Grid */}
         <div className="flex flex-col lg:flex-row gap-6">
-
           {/* Car Listings */}
           <div className="lg:w-full">
-
             {/* Results Controls */}
             <div className="bg-white rounded-xl shadow-md p-4 mb-6">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
