@@ -82,7 +82,7 @@ export function CarCardList({ title, price, year, mileage, fuelType, location, f
             ))}
           </div>
           <p className="text-gray-600 mb-4">{description}</p>
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             {isVerified && (
               <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1 rounded flex items-center">
                 <i className="fas fa-check-circle mr-1"></i> Verified Seller
@@ -93,7 +93,7 @@ export function CarCardList({ title, price, year, mileage, fuelType, location, f
                 Home Delivery Available
               </span>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

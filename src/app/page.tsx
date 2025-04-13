@@ -123,7 +123,7 @@ const App: React.FC = () => {
               </button>
             </div>
 
-            <div className="bg-white p-4 rounded-lg shadow-lg">
+            {/* <div className="bg-white p-4 rounded-lg shadow-lg">
               <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
                 <div className="flex-1">
                   <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -184,14 +184,14 @@ const App: React.FC = () => {
                   Search
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
 
       {/* Featured Listings Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between mb-12">
             <div>
@@ -223,7 +223,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Car Card 1 */}
+
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="relative h-56 overflow-hidden">
                 <img
@@ -257,7 +257,7 @@ const App: React.FC = () => {
                 </div>
               </div>
             </div>
-            {/* Car Card 2 */}
+
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="relative h-56 overflow-hidden">
                 <img
@@ -291,7 +291,7 @@ const App: React.FC = () => {
                 </div>
               </div>
             </div>
-            {/* Car Card 3 */}
+
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100">
               <div className="relative h-56 overflow-hidden">
                 <img
@@ -332,7 +332,7 @@ const App: React.FC = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* How It Works Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">AutoMarket</h3>
             <p className="text-gray-400 mb-4">
@@ -29,12 +29,9 @@ export default function Footer() {
               <li><a href="https://readdy.ai/home/7d2f6682-563e-44ca-9def-a9cd63f9d9cb/757d36b2-83c7-4398-9b9e-11c99f997459" data-readdy="true" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Home</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Browse Cars</a></li>
               <li><a href="https://readdy.ai/home/7d2f6682-563e-44ca-9def-a9cd63f9d9cb/d82bb03a-1ece-402b-a4eb-fa2a5b5e4e4e" data-readdy="true" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Sell Your Car</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">How It Works</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Contact</a></li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">Support</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Help Center</a></li>
@@ -43,7 +40,7 @@ export default function Footer() {
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">Terms of Service</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors cursor-pointer">FAQ</a></li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <h3 className="text-lg font-bold mb-4">Newsletter</h3>
             <p className="text-gray-400 mb-4">
